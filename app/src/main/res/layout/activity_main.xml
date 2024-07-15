@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FBC1D5">
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_initial"
+        android:textSize="48sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:layout_below="@id/timer_text"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pause"
+        android:layout_below="@id/start_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_below="@id/pause_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:textSize="30sp"/>
+</RelativeLayout>
